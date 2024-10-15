@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        supportFragmentManager.beginTransaction().add(R.id.frameLayout1, Fragment1()).commit()
+        supportFragmentManager.beginTransaction().add(R.id.frameLayout2, Fragment1()).commit()
     }
 }
